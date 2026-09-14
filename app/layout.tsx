@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from "next";
 import Navigation from "./navigation";
 
 import "./globals.css";
-import "fonts/SilkaMono/silkamono.css";
-import "fonts/BasierSquareMono/basiersquaremono.css";
+import "@/fonts/SilkaMono/silkamono.css";
+import "@/fonts/BasierSquareMono/basiersquaremono.css";
 import "remixicon/fonts/remixicon.css";
 
 export const metadata: Metadata = {

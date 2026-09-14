@@ -7,7 +7,7 @@ import * as Switch from "@radix-ui/react-switch";
 import BezierEasing from "bezier-easing";
 
 import "./animate.css";
-import Button from "components/Button";
+import Button from "@/components/Button";
 
 export default function Component() {
 	const dragAref = useRef(null);

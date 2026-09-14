@@ -1,16 +1,13 @@
 import { NextRequest } from "next/server";
 import { ImageResponse } from "next/og";
-
-export const runtime = "edge";
-
-const fontDisplay = fetch(new URL("../../../fonts/SilkaMono/silkamono-medium-webfont.ttf", import.meta.url)).then(
-	(res) => res.arrayBuffer()
-);
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export async function GET(req: NextRequest) {
 	const { searchParams } = req.nextUrl;
 	const title = searchParams.get("title");
-	const fontDataDisplay = await fontDisplay;
+	
+	const fontSilka = await readFile(join(process.cwd(), "/fonts/SilkaMono/silkamono-medium-webfont.ttf"));
 	return new ImageResponse(
 		(
 			<div
@@ -34,7 +31,7 @@ export async function GET(req: NextRequest) {
 			fonts: [
 				{
 					name: "Silka Mono",
-					data: fontDataDisplay,
+					data: fontSilka,
 					weight: 500,
 				},
 			],

@@ -3,9 +3,9 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTransition, a, easings, useSpring } from "@react-spring/web";
+import { useTransition, a, easings } from "@react-spring/web";
 
-import Logo from "public/images/logo.svg";
+import Logo from "@public/images/logo.svg";
 
 const Links = [
 	{
