@@ -9,7 +9,7 @@ import "remixicon/fonts/remixicon.css";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://tools.m1n4.net"),
-	title: "tools.ppr.one.",
+	title: "tools.m1n4.net",
 	description: "Small tools for niche use cases.",
 	openGraph: {
 		siteName: "tools.m1n4.net",
