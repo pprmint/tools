@@ -8,14 +8,14 @@ import "@/fonts/BasierSquareMono/basiersquaremono.css";
 import "remixicon/fonts/remixicon.css";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://tools.ppr.one"),
+	metadataBase: new URL("https://tools.m1n4.net"),
 	title: "tools.ppr.one.",
 	description: "Small tools for niche use cases.",
 	openGraph: {
-		siteName: "tools.ppr.one",
+		siteName: "tools.m1n4.net",
 	},
 	twitter: {
-		site: "tools.ppr.one",
+		site: "tools.m1n4.net",
 		creator: "@npprmint",
 		card: "summary_large_image",
 	},
